@@ -10,6 +10,8 @@ export class Counter {
 
         this.display = document.createElement("div");
         this.button = document.createElement("button");
+        this.decrementButton = document.createElement("button");
+        this.resetButton = document.createElement("button");
         
         //Add buttons, decrement, reset
         //this.decrement
@@ -17,6 +19,8 @@ export class Counter {
 
         // set button text
         this.button.textContent = "Increment";
+        this.decrementButton.textContent = "Decrement";
+        this.resetButton.textContent = "Reset";
         // Set new button text
         //this.decrement...
         //this.reset...
@@ -24,12 +28,22 @@ export class Counter {
         // Append dispay and button into the container div
         container.appendChild(this.display);
         container.appendChild(this.button);
+        container.appendChild(this.decrementButton);
+        container.appendChild(this.resetButton);
         // append buttons
         //container.appendChild()
 
         // Add event listener
         this.button.addEventListener("click", ()=> this.increment());
+        this.decrementButton.addEventListener("click", ()=> this.decrement());
+        this.resetButton.addEventListener("click", ()=> this.reset());
         // Add new event listeners
+
+        // I noticed that in this class example the event listeners are written using
+        // anonymous arrow functions. I am not fully sure if I should keep it like this
+        // or change it into named functions later. For now I decided to leave it the
+        // same as it was shown in class so I don’t change the original structure too much.
+        // I might change this later once the main functionality of the counter is working.
 
         // when this first gets mounted update the display
         this.update();
@@ -38,6 +52,19 @@ export class Counter {
     //state methods
     increment() {
         this.count++;
+        this.update();
+    }
+
+    decrement() {
+    if (this.count > 0) {
+        this.count--;
+        this.update();
+        }
+    }
+
+    reset() {
+        this.count = 0;
+        console.log("Reset Activated!!!");
         this.update();
     }
 
