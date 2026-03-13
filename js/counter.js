@@ -83,6 +83,15 @@ export class Counter {
         this.display.textContent = `Count: ${this.count}`;
 
         //classList.toggle() this.count===0
+
+        if (this.count === 0) {
+        this.decrementButton.classList.add("inactive");
+        this.resetButton.classList.add("inactive");
+    } else {
+        this.decrementButton.classList.remove("inactive");
+        this.resetButton.classList.remove("inactive");
+    }
+
     }
 }
 
