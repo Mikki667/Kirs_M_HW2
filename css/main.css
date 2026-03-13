@@ -12,7 +12,18 @@ button {
   margin-right: 20px;
   border: none;
   padding: 10px;
-  background-color: cadetblue;
+  background-color: #c94b9f;
   color: #fff;
   letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #9f3b7a;
+}
+
+.inactive {
+  opacity: 0.5;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
