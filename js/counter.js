@@ -45,6 +45,9 @@ export class Counter {
         // same as it was shown in class so I don’t change the original structure too much.
         // I might change this later once the main functionality of the counter is working.
 
+        // New Note
+        // // I fixed the issue with unnamed event handlers by switching to named functions
+
         // when this first gets mounted update the display
         this.update();
     }
