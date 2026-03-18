@@ -1,29 +1,84 @@
+@use '../abstracts' as *;
+
 .counter {
-    border: solid 1px #c5c5c5;
-    margin-top: 40px;
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,.2);
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    border: solid 1px $border-color;
+    margin-top: $space-lg;
+    padding: $space-md;
+    box-shadow: 0 0 5px $shadow-color;
+    font-family: $font-main;
   }
   
   button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin-top: $space-md;
+    margin-bottom: $space-md;
+    margin-right: $space-md;
     border: none;
     padding: 10px;
-    background-color: #c94b9f;
-    color: #fff;
+    background-color: $primary-color;
+    color: $text-color;
     letter-spacing: 1px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: $radius;
   }
 
   button:hover {
-    background-color: #9f3b7a;
+    background-color: $primary-hover;
   }
 
 .inactive {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  .counter-doc {
+    margin-top: $space-lg;
+  }
+
+  .counter-doc .grid-con {
+    background-color: #fff;
+    padding: $space-lg;
+    border-radius: $radius;
+    box-shadow: 0 10px 30px $shadow-color;
+  }
+
+  .intro-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: $space-md;
+  }
+
+  .counter-doc h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: $primary-hover;
+  }
+
+  .counter-doc p {
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: $space-md;
+  }
+
+  .counter-doc .m-col-span-6 {
+    background-color: #fafafa;
+    padding: $space-md;
+    border-radius: $radius;
+    transition: transform .2s ease;
+  }
+
+  .counter-doc .m-col-span-6:hover {
+    transform: translateY(-3px);
+  }
+
+  .grid-con {
+     margin-top: $space-md;
+  }
+
+  .demo-grid {
+    margin-top: $space-md;
+  }
+
+  .counter-demo {
+    margin-bottom: $space-lg;
   }
