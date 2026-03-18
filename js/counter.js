@@ -34,9 +34,9 @@ export class Counter {
         //container.appendChild()
 
         // Add event listener
-        this.button.addEventListener("click", ()=> this.increment());
-        this.decrementButton.addEventListener("click", ()=> this.decrement());
-        this.resetButton.addEventListener("click", ()=> this.reset());
+        this.button.addEventListener("click", this.handleIncrementClick.bind(this));
+        this.decrementButton.addEventListener("click", this.handleDecrementClick.bind(this));
+        this.resetButton.addEventListener("click", this.handleResetClick.bind(this));
         // Add new event listeners
 
         // I noticed that in this class example the event listeners are written using
@@ -67,6 +67,18 @@ export class Counter {
         console.log("Reset Activated!!!");
         this.update();
     }
+
+    handleIncrementClick() {
+        this.increment();
+    }  
+
+    handleDecrementClick() {
+        this.decrement();
+   }
+
+    handleResetClick() {
+        this.reset();
+   }
 
     //decrement() {
     //if statement needed
