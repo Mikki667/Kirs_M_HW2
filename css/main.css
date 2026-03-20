@@ -203,4 +203,46 @@ button:hover {
   #hamburger {
     display: none;
   }
+}
+.footer {
+  background-color: #c94b9f;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-info {
+  margin-bottom: 20px;
+}
+
+.footer-name {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-text,
+.footer-links p,
+.footer-info p {
+  margin: 0 0 10px 0;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.footer-links h3,
+.footer-info h3 {
+  margin: 0 0 12px 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .footer-brand,
+  .footer-links,
+  .footer-info {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
