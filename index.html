@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>OOP Counter</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7COpen+Sans" rel="stylesheet"
-        type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600&display=swap"
+        rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script type="module" defer src="js/main.js"></script>
@@ -24,9 +25,8 @@
 
             <nav class="desktop-nav">
                 <ul class="main-nav">
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Usage</a></li>
-                    <li><a href="#">Demo</a></li>
+                    <li><a href="#documentation">Documentation</a></li>
+                    <li><a href="#live_demo">Live Demo</a></li>
                 </ul>
             </nav>
 
@@ -39,14 +39,13 @@
 
         <nav>
             <ul>
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Demo</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#live_demo">Live Demo</a></li>
             </ul>
         </nav>
     </div>
 
-    <section class="counter-doc">
+    <section class="counter-doc" id="documentation">
         <h2 class="hidden">Counter Documentation</h2>
 
         <div class="grid-con">
@@ -55,33 +54,99 @@
                 <h2 class="intro-title">Reusable Counter Component</h2>
             </div>
 
-            <div class="col-span-full m-col-span-6 l-col-span-6">
+            <div class="col-span-full m-col-span-6 l-col-span-6 doc-box">
                 <h3>Overview</h3>
+
                 <p>
-                    This project demonstrates a reusable counter component built using JavaScript OOP.
-                    The counter keeps track of its own state and updates the interface when users click the buttons.
+                    This project demonstrates a reusable counter component built using JavaScript Object-Oriented
+                    Programming.
+                    The goal of the component is to manage its own state
+                    and update the interface automatically when the user interacts with it.
                 </p>
+
+                <p>
+                    Each counter instance keeps track of its value internally and controls its own
+                    buttons and display. This makes it possible to create multiple counters on the
+                    same page without conflicts or shared state issues.
+                </p>
+
+                <p>
+                    The component also prevents negative values and visually indicates when certain
+                    actions are not available. This helps create a more predictable and user-friendly
+                    interaction pattern.
+                </p>
+
             </div>
 
-            <div class="col-span-full m-col-span-6 l-col-span-6">
+            <div class="col-span-full m-col-span-6 l-col-span-6 doc-box">
                 <h3>How To Use</h3>
+
                 <p>
-                    Create a container element in HTML and instantiate the Counter or StepCounter class in JavaScript.
-                    The component accepts an initial value and optionally a step value for custom increments.
+                    To use the counter component, first create a container element in HTML where
+                    the counter will be rendered. After that, instantiate the Counter or StepCounter
+                    class in JavaScript and pass the container selector as a parameter.
                 </p>
+
+                <p>
+                    The Counter class accepts an optional initial value which defaults to 0. The
+                    StepCounter class extends this functionality by allowing a custom step value for
+                    incrementing and decrementing.
+                </p>
+
+                <p>
+                    Each counter mounts itself into the provided container and handles its own UI
+                    updates through internal methods. This keeps the logic organized and separates
+                    state management from layout structure.
+                </p>
+
             </div>
 
-            <div class="col-span-full m-col-span-full l-col-span-full demo-grid">
-                <h3>Live Demo</h3>
+            <div class="col-span-full feature-section">
+                <h3>Key Features</h3>
+            </div>
+
+            <div class="col-span-full m-col-span-6 l-col-span-6 feature-box">
+
+                <p>State-driven UI updates</p>
+                <p>Multiple independent counter instances</p>
+                <p>Reset functionality with console feedback</p>
+
+            </div>
+
+            <div class="col-span-full m-col-span-6 l-col-span-6 feature-box">
+
+                <p>Step-based counter using class inheritance</p>
+                <p>Conditional button states when value is zero</p>
+                <p>Modular styling structure built with SASS</p>
+
             </div>
 
         </div>
     </section>
 
+    <div class="grid-con live-demo-heading">
+        <div class="col-span-full" id="live_demo">
+            <h3>Live Demo</h3>
+            <p>Below are three working examples of the counter component.</p>
+        </div>
+    </div>
+
     <div class="grid-con counter-demo">
         <div id="counter-container1" class="counter col-span-full m-col-span-6 l-col-span-4"></div>
         <div id="counter-container2" class="counter col-span-full m-col-span-6 l-col-span-4"></div>
         <div id="counterCon" class="counter col-span-full m-col-span-6 l-col-span-4"></div>
+    </div>
+
+    <div class="grid-con github-section">
+        <div class="col-span-full github-box">
+
+            <p class="github-text">View full project source code on GitHub</p>
+
+            <a href="https://github.com/Mikki667/Kirs_M_HW2" class="github-button" target="_blank">
+                View Repository
+            </a>
+
+        </div>
     </div>
 
     <footer class="footer">
@@ -97,6 +162,7 @@
                 <h3>Sections</h3>
                 <p>Overview</p>
                 <p>How To Use</p>
+                <p>Key Features</p>
                 <p>Live Demo</p>
             </div>
 
