@@ -1,9 +1,13 @@
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+}
+
 .counter {
   border: solid 1px #c5c5c5;
   margin-top: 40px;
   padding: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 button {
@@ -26,59 +30,6 @@ button:hover {
 .inactive {
   opacity: 0.5;
   pointer-events: none;
-}
-
-.counter-doc {
-  margin-top: 40px;
-}
-
-.counter-doc .grid-con {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.intro-title {
-  font-size: 32px;
-  font-weight: 600;
-  color: #c94b9f;
-  margin-bottom: 20px;
-}
-
-.counter-doc h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #9f3b7a;
-}
-
-.counter-doc p {
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-.counter-doc .m-col-span-6 {
-  background-color: #fafafa;
-  padding: 20px;
-  border-radius: 20px;
-  transition: transform 0.2s ease;
-}
-
-.counter-doc .m-col-span-6:hover {
-  transform: translateY(-3px);
-}
-
-.grid-con {
-  margin-top: 20px;
-}
-
-.demo-grid {
-  margin-top: 20px;
-}
-
-.counter-demo {
-  margin-bottom: 40px;
 }
 
 .main-header {
@@ -245,4 +196,125 @@ button:hover {
   .footer-info {
     text-align: center;
   }
+}
+.counter-doc {
+  margin-top: 40px;
+}
+
+.counter-doc .grid-con {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.intro-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #c94b9f;
+  margin-bottom: 20px;
+}
+
+.counter-doc h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #9f3b7a;
+}
+
+.counter-doc p {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.doc-box {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.2s ease;
+}
+
+.doc-box:hover {
+  transform: translateY(-3px);
+}
+
+.counter-demo {
+  padding-bottom: 20px;
+}
+
+.feature-box {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.2s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-3px);
+}
+
+.feature-section {
+  padding-bottom: 20px;
+}
+
+.feature-box p {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.live-demo-heading {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.live-demo-heading h3 {
+  font-size: 28px;
+  color: #c94b9f;
+  margin-bottom: 10px;
+}
+
+.live-demo-heading p {
+  color: #444;
+  margin-bottom: 0;
+}
+
+.feature-section {
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .doc-box,
+  .feature-box {
+    margin-bottom: 40px;
+  }
+}
+.github-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.github-box {
+  text-align: center;
+}
+
+.github-text {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 20px;
+  border: 2px solid #c94b9f;
+  color: #c94b9f;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.github-button:hover {
+  background-color: #c94b9f;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
